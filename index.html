@@ -10,21 +10,7 @@
     <meta name="copyright" content="Ijas-Np" />
     <meta http-equiv="content-language" content="EN" />
     <meta http-equiv="Content-Type" content="text/html; iso-8859-1" />
-    <meta name="ROBOTS" content="INDEX, FOLLOW" />
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicon-194x194.png" sizes="194x194">
-    <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="img/android-chrome-192x192.png" sizes="192x192">
     <link rel="stylesheet" type="text/css" href="css/reveral.css" />
     <link rel="stylesheet" type="text/css" href="css/colorbox.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -301,12 +287,14 @@
             </g>
         </svg>
     </a>
-    <a class='inline fixed-br' href="#inline_content">Inline HTML</a>
-    <a class='youtube fixed-cv' href="http://www.youtube.com/embed/VOJyrQa_WR4?rel=0&amp;wmode=transparent"><img src="images/cvimg.jpg" alt="nmdnm"></a>
+    <a class='fixed-cv' href="#cv-pop-up"><img src="images/cvimg.jpg" alt="nmdnm"></a>
     <!-- This contains the hidden content for inline calls -->
     <div style='display:none'>
-        <div id='inline_content' style='padding:10px; background:#fff;'>
-             <iframe src="http://google.co.in/" height="200" width="100%"></iframe>
+        <div id='cv-pop-up' style='padding:10px;color: red;'>
+            <h3>Name:<span>Ijas Np</span></h3>
+            <h4>Designaton:<span>Web Ui Developer</span></h4>
+            <h4>Qualification:<span>Master Degree in computer applications</span></h4>
+            <a class="link-typ-cv" href="pdf/ijas-Web-Ui-Developer.docx" target="_blank">Download Cv</a>
         </div>
     </div>
     <div class="copy">© 2017 "Jbean" Ijas Np - Design & Code by Ijas Np</div>
@@ -317,9 +305,18 @@
     <script src="js/nyon.js"></script>
     <script src="js/jquery.colorbox-min.js"></script>
     <script type="text/javascript">
+        var $document = $(document),
+        $element = $('.fixed-cv'),
+        className = 'hasScrolled';
         $(document).ready(function() {
-            $(".inline").colorbox({inline:true, width:"50%"});    
-            $(".youtube").colorbox({iframe:true, innerWidth:"80%", innerHeight:390});
+            $(".fixed-cv").colorbox({inline:true, width:"80%"});    
+        });
+        $document.scroll(function() {
+          if ($document.scrollTop() >= 200) {
+            $element.addClass(className);
+          } else {
+            $element.removeClass(className);
+          }
         });
     </script>
 </body>
