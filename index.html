@@ -11,6 +11,7 @@
     <meta http-equiv="content-language" content="EN" />
     <meta http-equiv="Content-Type" content="text/html; iso-8859-1" />
     <!-- Favicon -->
+    <link rel="stylesheet" href="css/audioplayer.css" />
     <link rel="stylesheet" type="text/css" href="css/reveral.css" />
     <link rel="stylesheet" type="text/css" href="css/colorbox.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -407,12 +408,21 @@
         </div>
     </div>
     <div class="copy">© 2017 "Jbean" Ijas Np - Design & Code by Ijas Np</div>
+    <span class="jfxd">
+        <audio preload="auto" controls>
+            <source src="audio/BlueDucks_FourFlossFiveSix.mp3">
+            <source src="audio/BlueDucks_FourFlossFiveSix.ogg">
+            <source src="audio/BlueDucks_FourFlossFiveSix.wav">
+        </audio>
+    </span>
     <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/scrollMonitor.js"></script>
     <script src="js/reveral.js"></script>
     <script src="js/nyon.js"></script>
     <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/audioplayer.js"></script>
+    <script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
     <script type="text/javascript">
         var $document = $(document),
         $element = $('.fixed-cv'),

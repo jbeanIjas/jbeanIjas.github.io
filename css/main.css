@@ -2514,3 +2514,12 @@ article.wrapper-work{
 	height: 25px !important;
 	top: -25px;
 }
+.jfxd{
+	position: fixed;;
+	bottom: 10px;
+	right: 20px;
+	width: 150px;
+	border: 1px solid #3F3F3F;
+	z-index: 9999;
+	border-radius: 5px;
+}
