@@ -32,31 +32,31 @@ figure {
 }
 @font-face {
     font-family: 'Soho-std-light';
-    src: url('http://www.nyondesign.it/css/fonts/Soho-std-light.eot');
-    src: url('fonts/Soho-std-light.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Soho-std-light.woff') format('woff'),
+    src: url('fonts/Soho-std-light.eot');
+    src: url('fonts/Soho-std-lightd41d.eot#iefix') format('embedded-opentype'),
+         url('fonts/Soho-std-light.html') format('woff'),
          url('fonts/Soho-std-light.ttf') format('truetype'),
-         url('http://www.nyondesign.it/css/fonts/Soho-std-light.svg#PTSansRegular') format('svg');
+         url('fonts/Soho-std-light.svg#PTSansRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Soho-std-bold';
     src: url('fonts/Soho-std-bold.eot');
-    src: url('fonts/Soho-std-bold.eot?#iefix') format('embedded-opentype'),
+    src: url('fonts/Soho-std-boldd41d.eot#iefix') format('embedded-opentype'),
          url('fonts/Soho-std-bold.woff') format('woff'),
          url('fonts/Soho-std-bold.ttf') format('truetype'),
-         url('http://www.nyondesign.it/css/fonts/Soho-std-bold.svg#PTSansRegular') format('svg');
+         url('fonts/Soho-std-bold.svg#PTSansRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'GothamLight';
     src: url('fonts/GothamLight.eot');
-    src: url('fonts/GothamLight.eot?#iefix') format('embedded-opentype'),
+    src: url('fonts/GothamLightd41d.eot#iefix') format('embedded-opentype'),
          url('fonts/GothamLight.woff') format('woff'),
          url('fonts/GothamLight.ttf') format('truetype'),
-         url('http://www.nyondesign.it/css/fonts/GothamLight.svg#PTSansRegular') format('svg');
+         url('fonts/GothamLight.svg#PTSansRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
