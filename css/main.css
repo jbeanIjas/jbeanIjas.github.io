@@ -2473,3 +2473,29 @@ article.wrapper-work{
 }
 }
 }
+.lnk-tp-1{
+	
+	color: #ffffff;
+	position: fixed;
+	top: 60px;
+	right: 60px;
+	z-index: 555;
+	font-family: 'Soho-std-light';
+	font-weight: 300;
+	width: 75px;
+	height: 75px;
+}
+.lnk-tp-1 img{
+	width: 100%;
+	height: 100%;
+	border: 2px solid #E1253B;
+	border-radius: 30%;
+}
+@media (max-width: 767px){
+.lnk-tp-1{
+	top: 10px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+}
+}
