@@ -21,7 +21,7 @@
     .js .one-click{
         display: none;
     }
-    .one-click{
+    .started .one-click{
         display: block;
     }
 </style>
@@ -254,7 +254,7 @@
           $("body").addClass('js');
         }
         if (document.readyState === "complete") {
-          $("body").removeClass('js');
+          $("body").removeClass('js').addClass('started');
         }
       }
     </script>
