@@ -1,0 +1,53 @@
+/************************/
+/*Footer component Start*/
+/************************/
+#footer-bg{
+	background:#4d4d4d ;
+	border-top: 2px solid #4d4d4d;
+}
+#footer{
+	padding:10px;
+}
+#footer ul{list-style:none;padding:0px;}
+#footer ul li a{text-decoration:none; color:#ffffff;}
+#footer .ft-links .hd{
+	color: #ffffff;
+    display: block;
+    font-family: "Lato",sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+	position:relative;
+	margin:0px;
+}
+#footer .ft-links .hd span.ft-lnk-head-plus{
+	content:"";
+	background:url(../images/footer-sprite.png) no-repeat 0px 0px;
+	width:16px;
+	height:16px;
+	position:absolute;
+	top:0px;
+	right:0px;
+	display:none;
+}
+#footer h3.ft-link-hd > span:hover{cursor:pointer;}
+#footer .ft-links .hd span.ft-lnk-head-minus{
+	content:"";
+	background:url(../images/footer-sprite.png) no-repeat -17px 0px;
+	width:16px;
+	height:16px;
+	position:absolute;
+	top:0px;
+	right:0px;
+	display:none;
+}
+
+@media (max-width:767px) {
+	#footer .ft-links .hd span.ft-lnk-head-plus , #footer .ft-links .hd span.ft-lnk-head-minus{display:block;}
+	#footer .ft-links .hd{border-bottom:1px solid #dadada;padding-bottom:10px; cursor:pointer;}
+	#footer{padding:0px;}
+	#footer > div:last-child .hd{border:0px; padding-bottom:0px;}
+}
+/************************/
+/*Footer component   End*/
+/************************/
