@@ -1424,7 +1424,7 @@ background-color: #97C6CA;
 .LeftArrow{
   position: absolute;
   left: -15px;
-  bottom: -60px;
+  bottom: -80px;
 }
 .S7T1{
   font-size: 35px;
@@ -1592,3 +1592,4 @@ body {
 .gtag svg{
   max-width: 45px;
 }
+
