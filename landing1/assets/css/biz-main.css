@@ -1593,3 +1593,14 @@ body {
   max-width: 45px;
 }
 
+.section4 .slick-prev, 
+.section4 .slick-next{
+  width: auto;
+  height: auto;
+}
+.Slider2 .slick-next{
+  right: 50%;
+  top: -65px;
+  margin-right: -35px;
+  transform: rotate(-90deg);
+}
