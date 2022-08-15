@@ -1561,3 +1561,18 @@ padding-top: 70px;
   height: auto !important;
   width: auto !important;
 }
+.FixedNav{
+  position: fixed;
+  top: 40%;
+  right: 0;
+  display: inline-block;
+  width: 50px;
+}
+.FixedNav a{
+  background-color: #fff;
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  padding: 10px;
+  z-index: 999;
+}
