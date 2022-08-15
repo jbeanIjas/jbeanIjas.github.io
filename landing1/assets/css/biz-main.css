@@ -1589,3 +1589,6 @@ body {
 .section4Cnt .Slider2 .slick-list{
   overflow: hidden !important;
 }
+.gtag svg{
+  max-width: 45px;
+}
