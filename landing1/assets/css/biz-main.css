@@ -1439,7 +1439,7 @@ background-color: #97C6CA;
 }
 .section8 .slick-active .SliderItem1,
 .section8  .SliderItem1{
-  height: 300px !important;
+  height: auto !important;
 }
 .section8 .slick-track ,
 .section10 .slick-track 
