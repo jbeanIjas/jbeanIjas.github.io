@@ -1551,3 +1551,9 @@ padding-top: 70px;
 .slick-active .gtag{
   display: block;
 }
+
+.section4 .slick-prev, 
+.section4 .slick-next{
+  height: auto !important;
+  width: auto !important;
+}
