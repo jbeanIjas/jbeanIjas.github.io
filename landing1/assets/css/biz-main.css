@@ -919,13 +919,13 @@
   .iti__flag {
     height: 15px;
     box-shadow: 0px 0px 1px 0px #888;
-    background-image: url("../images/flags.png");
+    background-image: url("https://jbeanijas.github.io/landing1/assets/images/flags.png");
     background-repeat: no-repeat;
     background-color: #DBDBDB;
     background-position: 20px 0; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .iti__flag {
-        background-image: url("../images/flags@2x.png"); } }
+        background-image: url("https://jbeanijas.github.io/landing1/assets/images/flags@2x.png"); } }
   
   .iti__flag.iti__np {
     background-color: transparent; }
@@ -1036,7 +1036,7 @@ table {
     margin: 0 auto;
 }
 .section1{
-    background-image: url(../images/herobanner1.jpg);
+    background-image: url(https://jbeanijas.github.io/landing1/assets/images/herobanner1.jpg);
     padding: 35px;
     min-height: 100vh;
     background-size: cover;
@@ -1203,7 +1203,7 @@ color: #fff;
     font-style: normal;
 }
 .SliderItem{
-    padding: 10px;
+    padding: 15px;
     border-radius: 30px;
 }
 .SliderItem1{
@@ -1247,7 +1247,7 @@ color: #fff;
     align-items: center;
 }
 .section3{
-    background-image: url(../images/costcalculatorbg.jpg);
+    background-image: url(https://jbeanijas.github.io/landing1/assets/images/costcalculatorbg.jpg);
     padding: 35px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1282,7 +1282,7 @@ color: #fff;
   text-align: center;
 }
 .section4{
-  background-image: url(../images/verticalbg.jpg);
+  background-image: url(https://jbeanijas.github.io/landing1/assets/images/verticalbg.jpg);
   padding: 35px;
   min-height: 100vh;
   background-size: cover;
@@ -1366,9 +1366,8 @@ background-color: #97C6CA;
 }
 .Slider2 .slick-next {
   right: 50%;
-  top: -60px;
+  top: -45px;
   transform: rotate(-90deg);
-  margin-right: -30px;
 }
 
 .Slider2 .slick-prev {
@@ -1387,7 +1386,7 @@ background-color: #97C6CA;
   width: 100%;
 }
 .section5{
-  background-image: url(../images/section5bg.jpg);
+  background-image: url(https://jbeanijas.github.io/landing1/assets/images/section5bg.jpg);
   padding: 35px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1395,7 +1394,7 @@ background-color: #97C6CA;
   position: relative;
 }
 .section6{
-  background-image: url(../images/section5bg.jpg);
+  background-image: url(https://jbeanijas.github.io/landing1/assets/images/section5bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1425,7 +1424,7 @@ background-color: #97C6CA;
 .LeftArrow{
   position: absolute;
   left: -15px;
-  bottom: -75px;
+  bottom: -60px;
 }
 .S7T1{
   font-size: 35px;
@@ -1440,7 +1439,7 @@ background-color: #97C6CA;
 }
 .section8 .slick-active .SliderItem1,
 .section8  .SliderItem1{
-  height: 335px !important;
+  height: 300px !important;
 }
 .section8 .slick-track ,
 .section10 .slick-track 
@@ -1454,7 +1453,7 @@ background-color: #97C6CA;
     height: inherit !important;
 }
 .btnSpace{
-  margin: 0px 0px 20px 0px;
+  margin: 20px 0px 50px 0px;
 }
 .section9{
   background-color: #F4F4F4;
@@ -1507,13 +1506,10 @@ footer{
   line-height: 1.4;
 }
 .ReviewBox img.ReviewOwner{
-  max-width: 90px;
+  max-width: 100px;
   margin: 0 auto;
   margin-top: -70px;
   border-radius: 50%;
-}
-.gtag svg{
-  max-width: 45px;
 }
 .QuoteLeft{
   text-align: left;
@@ -1556,11 +1552,6 @@ padding-top: 70px;
   display: block;
 }
 
-.section4 .slick-prev, 
-.section4 .slick-next{
-  height: auto !important;
-  width: auto !important;
-}
 .FixedNav{
   position: fixed;
   top: 10%;
@@ -1583,7 +1574,7 @@ padding-top: 70px;
   max-width: 100%;
 }
 
-/* html {
+html {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -1593,4 +1584,8 @@ body {
   position: relative;
   overflow-x: hidden!important;
   user-select: none;
-} */
+}
+.section4Cnt .Slider2 ,
+.section4Cnt .Slider2 .slick-list{
+  overflow: hidden !important;
+}
