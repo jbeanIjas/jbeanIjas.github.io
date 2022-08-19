@@ -1668,5 +1668,19 @@ color: #fff;
 .vertical-slider .item.slick-slide.slick-active.slick-center .ItemBlock1{
     height: 200px;
   width: 100%;
-  
+}
+.section1.section1-1{
+  background-image: url(../desktop-images/section1-min.jpg);
+}
+.section1.section1-2{
+  background-image: url(../desktop-images/section1-1-min.jpg);
+}
+.section1.section1-3{
+  background-image: url(../desktop-images/section1-2-min.jpg);
+}
+.section1.section1-4{
+  background-image: url(../desktop-images/section1-3-min.jpg);
+}
+.section1.section1-5{
+  background-image: url(../desktop-images/section1-4-min.jpg);
 }
