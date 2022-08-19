@@ -1646,12 +1646,12 @@ color: #fff;
 {
     height: inherit !important;
 }
-.FeaturesSlider3 .slick-center .ReviewBox {
+/* .FeaturesSlider3 .slick-center .ReviewBox {
    height: 540px;
 }
 .FeaturesSlider3 .slick-center .ReviewBox .ReviewComment{
   min-height: 250px;
-}
+} */
 .FeaturesSlider3 .slick-initialized .slick-slide,
 .vertical-slider .slick-initialized .slick-slide{
     display: flex;
