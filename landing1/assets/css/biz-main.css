@@ -1036,12 +1036,16 @@ border-spacing: 0;
   margin: 0 auto;
 }
 .section1{
-  background-image: url(https://jbeanijas.github.io/landing1/assets/images/herobanner1.jpg);
+  /* background-image: url(https://jbeanijas.github.io/landing1/assets/images/herobanner1.jpg); */
   padding: 35px;
-  min-height: 100vh;
+  /* min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #97C6CA;
+  background-color: #97C6CA; */
+  position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 body{
   font-family: 'Montserrat';
@@ -1424,7 +1428,7 @@ position: relative;
 .LeftArrow{
 position: absolute;
 left: -15px;
-bottom: -80px;
+bottom: -70px;
 }
 .S7T1{
 font-size: 35px;
@@ -1603,4 +1607,54 @@ right: 50%;
 top: -65px;
 margin-right: -35px;
 transform: rotate(-90deg);
+}
+
+.HeroItem img{
+  width: 100%;
+  height: 100%;
+}
+
+.section1:after{
+  content: "";
+  background-image: url(../images/mobileheroshade.png);
+  width: 100%;
+  height: 240px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.section1 .container{
+  z-index: 9;
+  position: relative;
+}
+.sldr11{
+  color: #fff;
+}
+.sldr11{
+  min-height: 300px;
+  padding: 20px;
+  background-image: url("../desktop-images/slidebg.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+}
+.sldr11a {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.sldr11b {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.sldr11c {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.Sld{
+  margin-right: 10px;
+}
+.FeaturesSlider1 .SliderItem{
+  padding: 0px;
 }
