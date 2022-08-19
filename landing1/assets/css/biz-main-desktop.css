@@ -1039,12 +1039,23 @@ body{
     overflow-x: hidden;
 }
 .section1{
-    background-image: url(../desktop-images/section1-min.jpg);
+    /* background-image: url(../desktop-images/section1-min.jpg);
     min-height: 100vh;
     background-size: cover;
-    background-color: #97C6CA;
+    background-color: #97C6CA; */
     padding: 20px 0px;
-    padding-bottom: 135px;
+    /* padding-bottom: 135px; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.section1 .slick-track {
+  display: flex !important;
+}
+
+.section1 .slick-slide {
+  height: inherit !important;
 }
 .container{
     max-width: 1000px;
@@ -1116,6 +1127,7 @@ color: #fff;
     border: none;
     border-radius: 20px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .HdTxt1-2{
     color: #8376B2;
@@ -1315,6 +1327,7 @@ color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -5px;
 }
 
 .section4Txt1 {
@@ -1669,18 +1682,23 @@ color: #fff;
     height: 200px;
   width: 100%;
 }
-.section1.section1-1{
-  background-image: url(../desktop-images/section1-min.jpg);
+.HeroItem img{
+  width: 100%;
+  height: 100%;
 }
-.section1.section1-2{
-  background-image: url(../desktop-images/section1-1-min.jpg);
+/* .Hero{
+  position: relative;
+} */
+.section1::after{
+  content: "";
+  background-image: url(../desktop-images/heroshade.png);
+  width: 100%;
+  height: 235px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
-.section1.section1-3{
-  background-image: url(../desktop-images/section1-2-min.jpg);
-}
-.section1.section1-4{
-  background-image: url(../desktop-images/section1-3-min.jpg);
-}
-.section1.section1-5{
-  background-image: url(../desktop-images/section1-4-min.jpg);
+.section1 .container{
+  z-index: 9;
+  position: relative;
 }
