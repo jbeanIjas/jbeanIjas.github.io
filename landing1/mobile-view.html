@@ -761,6 +761,18 @@ style=" fill:#000000;"><path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 4
 
 <script src="https://jbeanijas.github.io/landing1/assets/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
+    // ===== Scroll to Top ==== 
+$(window).scroll(function()  //When the page is being scrolled
+{
+    if ($(this).scrollTop() >= 150)    // If page is scrolled more than 150px
+    {
+        $("#return_to_top").fadeIn(200);    // Fade in the arrow, 200 means that arrow will be shown in 200 miliseconds (fast) - 600 means slow, 400 is normal
+    }
+    else
+    {
+        $("#return_to_top").fadeOut(200);   // Else fade out the arrow, fast
+    }
+});
   $(document).on('ready', function() {
         $(".SliderItem1 .SldrContent").click(
             function(){
@@ -772,10 +784,13 @@ style=" fill:#000000;"><path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 4
                 $(this).removeClass("flip");
             }
         );
-        $(".BtnS1").click(function() {
-            $('html, body').animate({
-                scrollTop: $("body").offset().top
-            }, 1000);
+        
+        $(".BtnS1").click(function()  // When arrow is clicked
+        {
+            $("body,html").animate(
+            {
+                scrollTop : 0                       // Scroll to top of body
+            }, 400);  //how fast the scrolling animation will be in miliseconds
         });
         $('.herobanner').slick({
             dots: false,
