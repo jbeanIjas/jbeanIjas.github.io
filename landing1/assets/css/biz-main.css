@@ -1181,6 +1181,7 @@ color: #fff;
 .Slider1 .slick-track
 {
   display: flex !important;
+  height: 400px;
 }
 
 .Slider1 .slick-slide
