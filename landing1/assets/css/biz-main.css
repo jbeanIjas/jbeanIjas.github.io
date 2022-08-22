@@ -1050,8 +1050,8 @@ border-spacing: 0;
 }
 .Hero{
   position: relative;
-  min-height: 825px;
-  background-color: #59507b;
+  min-height: 800px;
+  background-color: #8376b2;
 }
 body{
   font-family: 'Montserrat';
