@@ -398,7 +398,7 @@
                 At Business Incorporation Zone,<br/> 
 we pride ourselves on giving our clients the best possible start to their business.
             </div>
-            <a href="javascript:void(0)" class="BtnS1 font-black wow fadeInUp">
+            <a href="#" class="BtnS1 font-black">
                 Calculate Now
                 
                 <span class="Aroow1">
@@ -465,7 +465,7 @@ we pride ourselves on giving our clients the best possible start to their busine
         <!-- <div class="Sec5Txt2 font-medium-italic text-center wow fadeInUp">
             To operate your business, you need to have the right license. There are a few options for you to choose from: service, trading or commercial.
         </div> -->
-        <a href="javascript:void(0)" class="BtnS1 cs1 font-black wow fadeInUp">
+        <a href="#" class="BtnS1 cs1 font-black wow fadeInUp">
             Apply for the business
             
             <span class="Aroow1">
@@ -536,7 +536,7 @@ we pride ourselves on giving our clients the best possible start to their busine
             </section>
         </div>
         <div class="pd-r-l wow fadeInUp btnSpace">
-            <a href="javascript:void(0)" class="BtnS1 font-black wow fadeInUp">
+            <a href="#" class="BtnS1 font-black wow fadeInUp">
                 BOOK FREE CONSULTATION
             </a>
         </div>
@@ -773,7 +773,11 @@ style=" fill:#000000;"><path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 4
             }
         );
         $(".BtnS1").click(function() {
-            alert("clicked");
+            $('html, body').animate({
+                scrollTop: $("body").offset().top
+            }, 1000);
+        });
+        $(".ScrollToContact").click(function() {
             $('html, body').animate({
                 scrollTop: $("body").offset().top
             }, 1000);
@@ -858,11 +862,7 @@ style=" fill:#000000;"><path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 4
 });
 wow.init();
 </script>
-<script type="text/javascript">
-    $("document").ready(function() {
-        $(".freeZnFilter").trigger('click');
-    });
-</script>
+
 <div class="FixedNav">
     <a href="#">
       
