@@ -1634,7 +1634,7 @@ transform: rotate(-90deg);
   position: absolute;
   left: 0;
   background-repeat: no-repeat;
-  bottom: 0px;
+  bottom: -2px;
   background-size: cover;
 }
 .section1 .container{
