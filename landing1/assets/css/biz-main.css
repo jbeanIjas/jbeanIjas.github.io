@@ -1047,6 +1047,9 @@ border-spacing: 0;
     top: 0;
     width: 100%;
 }
+.Hero{
+  position: relative;
+}
 body{
   font-family: 'Montserrat';
   line-height: 1.2;
@@ -1627,7 +1630,9 @@ transform: rotate(-90deg);
   height: 240px;
   position: absolute;
   left: 0;
+  background-repeat: no-repeat;
   bottom: 0px;
+  background-size: cover;
 }
 .section1 .container{
   z-index: 9;
