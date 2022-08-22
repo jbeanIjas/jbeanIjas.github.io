@@ -1705,7 +1705,7 @@ color: #fff;
 .Hero{
   position: relative;
 }
-.section1::after{
+.Hero::after{
   content: "";
   background-image: url(../desktop-images/heroshade.png);
   width: 100%;
