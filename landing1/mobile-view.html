@@ -814,6 +814,11 @@ style=" fill:#000000;"><path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 4
             slidesToShow: 3,
             slidesToScroll: 3
         });
+        $(".ScrollToContact , .BtnS1 ").click(function() {
+            $('html, body').animate({
+                scrollTop: $("body").offset().top
+            }, 1000);
+        });
 
         $(".FilterTp1").on('click', function(){
             $(".FilterTp1").removeClass("active");
