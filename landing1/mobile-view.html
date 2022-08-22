@@ -814,20 +814,6 @@ style=" fill:#000000;"><path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 4
             slidesToShow: 3,
             slidesToScroll: 3
         });
-        $(".BtnS1").click(function() {
-            alert("btn")
-            $('html, body').animate({
-                scrollTop: $("body").offset().top
-            }, 1000);
-        });
-        $(".ScrollToContact").click(function() {
-            alert("scroll")
-            $('html, body').animate({
-                scrollTop: $("body").offset().top
-            }, 1000);
-            
-        });
-
         $(".FilterTp1").on('click', function(){
             $(".FilterTp1").removeClass("active");
             $(this).addClass("active");
