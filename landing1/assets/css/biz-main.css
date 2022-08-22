@@ -1285,6 +1285,10 @@ display: block;
 text-decoration: none;
 text-align: center;
 }
+.BtnS1.cs1{
+  max-width: 80%;
+  margin: 0 auto;
+}
 .section4{
 background-image: url(https://jbeanijas.github.io/landing1/assets/images/verticalbg.jpg);
 padding: 35px;
@@ -1391,11 +1395,13 @@ width: 100%;
 }
 .section5{
 background-image: url(https://jbeanijas.github.io/landing1/assets/images/section5bg.jpg);
-padding: 35px;
+
 background-size: cover;
 background-repeat: no-repeat;
 background-color: #97C6CA;
 position: relative;
+padding-bottom: 30px;
+padding-top: 10px;
 }
 .section6{
 background-image: url(https://jbeanijas.github.io/landing1/assets/images/section5bg.jpg);
