@@ -1050,6 +1050,7 @@ border-spacing: 0;
 }
 .Hero{
   position: relative;
+  min-height: 825px;
 }
 body{
   font-family: 'Montserrat';
