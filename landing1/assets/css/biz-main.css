@@ -1627,7 +1627,7 @@ transform: rotate(-90deg);
   height: 240px;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -43px;
 }
 .section1 .container{
   z-index: 9;
