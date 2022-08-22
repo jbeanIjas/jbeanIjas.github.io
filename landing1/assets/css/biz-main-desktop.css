@@ -1312,6 +1312,9 @@ color: #fff;
     text-decoration: none;
     text-align: center;
 }
+.BtnS1.cs2{
+  max-width: 35%;
+}
 .sp1.BtnS1{
   position: absolute;
     bottom: 80px;
