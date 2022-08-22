@@ -1685,10 +1685,7 @@ color: #fff;
 .vertical-slider .slick-center .ItemBlock1 {
     height: 200px;
 }
-.vertical-slider .item.slick-slide .ItemBlock1{
-    height: 0px;
-    width: 0px;
-}
+
 .vertical-slider .item.slick-slide.slick-active .ItemBlock1{
     height: 160px;
   width: 100%;
