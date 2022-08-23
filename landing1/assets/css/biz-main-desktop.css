@@ -1514,12 +1514,12 @@ color: #fff;
     padding: 60px 35px 35px 35px;
   }
   .ft1{
-    font-size: 45px;
+    font-size: 35px;
     color: #8376B2;
     margin-bottom: 20px;
   }
   .ft2{
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 15px;
   }
   .fline svg{
@@ -1527,13 +1527,13 @@ color: #fff;
     margin-bottom: 20px;
   }
   .ft3{
-    font-size: 19px;
+    font-size: 17px;
     line-height: 1.5;
     margin-bottom: 30px;
   }
   .ft4{
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 17px;
   }
   .MediaLiks{
     display: flex;
@@ -1544,6 +1544,7 @@ color: #fff;
   }
   .MediaLiks a  svg{
     fill: #121212;
+    max-width: 40px;
   }
   .footerBottom{
     background-color: #121212;
@@ -1551,7 +1552,8 @@ color: #fff;
     padding: 35px 20px;
   }
   .fbT1{
-    line-height: 1.4;
+    line-height: 1.2;
+    font-size: 15px;
   }
   .ReviewBox img.ReviewOwner{
     max-width: 100px;
