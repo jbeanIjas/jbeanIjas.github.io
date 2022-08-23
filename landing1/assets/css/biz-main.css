@@ -1050,8 +1050,7 @@ border-spacing: 0;
 }
 .Hero{
   position: relative;
-  min-height: 800px;
-  background-color: #8376b2;
+  min-height: 730px;
 }
 body{
   font-family: 'Montserrat';
@@ -1059,12 +1058,15 @@ body{
   color: #121212;
 }
 .Logo{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+.Logo svg{
+  max-width: 160px;
 }
 .HdTxt1{
   font-family: 'Montserrat'; 
-  font-size: 28px;
-  line-height: 1.28;
+  font-size: 26px;
+  line-height: 1.1;
 }
 .HdTxt1 span{
   display: block;
@@ -1128,7 +1130,7 @@ body{
   width: 100%;
   color: #fff;
   font-size: 12px;
-  padding: 12px;
+  padding: 10px;
   margin-bottom: 12px;
 }
 .FormElements ::placeholder {
