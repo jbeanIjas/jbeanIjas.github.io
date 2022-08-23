@@ -1043,7 +1043,7 @@ body{
     min-height: 100vh;
     background-size: cover;
     background-color: #97C6CA; */
-    padding: 20px 0px;
+    padding: 10px 0px;
     /* padding-bottom: 135px; */
     position: absolute;
     left: 0;
@@ -1062,7 +1062,7 @@ body{
     margin: 0 auto;
 }
 .HdTxt1{
-    font-size: 52px;
+    font-size: 38px;
     line-height: 1.1;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -1103,7 +1103,7 @@ body{
     width: 100%;
     color: #fff;
     font-size: 12px;
-    padding: 12px;
+    padding: 11px;
     margin-bottom: 12px;
 }
 .FormElements ::placeholder {
