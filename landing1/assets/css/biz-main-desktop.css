@@ -1699,7 +1699,7 @@ color: #fff;
 }
 .HeroItem img{
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 .Hero{
   position: relative;
