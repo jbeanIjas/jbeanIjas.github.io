@@ -1449,6 +1449,7 @@ bottom: -70px;
 font-size: 30px;
 margin-top: -59px;
 }
+
 .S7T2{
 font-size: 16px;
   margin: 30px 0px;
@@ -1676,3 +1677,38 @@ transform: rotate(-90deg);
 .FeaturesSlider1 .SliderItem{
   padding: 0px;
 }
+
+.BackContent1.color1 , .BackContent.color1{
+  background-color: #97C6CA;
+  }
+  .BackContent1.color2 , .BackContent.color2{
+  background-color: #C4D99F;
+  }
+  .BackContent1.color3 , .BackContent.color3{
+  background-color: #EDD194;
+  }
+  .BackContent1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: crosshair;
+    transform: translateY(100%);
+    transition: 00.4s;
+    z-index: 1;
+  }
+  .active .BackContent1{
+    transform: translateY(0%);
+  }
+  .Slider2 .item {
+    position: relative;
+  }
