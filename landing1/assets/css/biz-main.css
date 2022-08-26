@@ -1566,10 +1566,12 @@ margin-bottom: 20px;
 .ReviewComment{
 font-size: 16px;
 line-height: 1.4;
-height: 384px;
+height: 495px;
 overflow: hidden;
 }
-
+.S7T1.noMar{
+  margin-top: 0px !important;
+}
 .FixedNav{
 position: fixed;
 top: 10%;
