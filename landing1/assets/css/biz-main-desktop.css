@@ -1062,7 +1062,7 @@ body{
     margin: 0 auto;
 }
 .HdTxt1{
-    font-size: 38px;
+    font-size: 30px;
     line-height: 1.1;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -1074,19 +1074,20 @@ body{
     margin-bottom: 20px;
 }
 .HdTxt2{
-    max-width: 550px;
+    max-width: 600px;
     margin-bottom: 20px;
+    font-size: 13px;
 }
 .Box1{
-    padding: 25px;
+    padding: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 20px;
     border-radius: 30px;
-    max-width: 400px;
+    max-width: 370px;
 }
 .Box1Txt1{
     text-transform: uppercase;
-    font-size: 19px;
+    font-size: 16px;
     color: #fff;
     line-height: 1.4;
     margin-bottom: 20px;
@@ -1780,7 +1781,7 @@ color: #fff;
 
 @media screen and (max-height: 700px){
   .HdTxt1 {
-    font-size: 30px;
+    font-size: 27px;
     margin-bottom: 10px;
   }
   .Logo {
