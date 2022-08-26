@@ -1227,6 +1227,7 @@ color: #fff;
   transition: 0.3s;
   overflow: hidden;
   background-size: cover;
+  background-position: bottom;
 }
 .slick-active .SliderItem1{
   height: 350px;
@@ -1492,7 +1493,7 @@ color: #8376B2;
 margin-bottom: 20px;
 }
 .ft2{
-font-size: 24px;
+font-size: 22px;
 margin-bottom: 15px;
 }
 .fline svg{
