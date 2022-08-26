@@ -1557,6 +1557,7 @@ padding-top: 70px;
 font-size: 18px;
 margin-bottom: 5px;
 margin-top: -32px;
+height: 50px;
 }
 .ReviewDesignation{
 font-size: 16px;
@@ -1565,12 +1566,8 @@ margin-bottom: 20px;
 .ReviewComment{
 font-size: 16px;
 line-height: 1.4;
-}
-.gtag{
-display: none;
-}
-.slick-active .gtag{
-display: block;
+height: 384px;
+overflow: hidden;
 }
 
 .FixedNav{
@@ -1706,7 +1703,9 @@ transform: rotate(-90deg);
     z-index: 1;
   }
   .active .BackContent1{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .Slider2 .item {
     position: relative;
