@@ -1692,7 +1692,7 @@ transform: rotate(-90deg);
     left: 0;
     top: 0;
     background-color: #fff;
-    border-radius: 30px;
+    border-radius: 45px;
     height: 100%;
     padding: 20px;
     text-align: center;
@@ -1702,12 +1702,12 @@ transform: rotate(-90deg);
     align-items: center;
     justify-content: center;
     cursor: crosshair;
-    transform: translateY(100%);
+    display: none;
     transition: 00.4s;
     z-index: 1;
   }
   .active .BackContent1{
-    transform: translateY(0%);
+    display: block;
   }
   .Slider2 .item {
     position: relative;
