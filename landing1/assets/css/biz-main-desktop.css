@@ -1371,6 +1371,7 @@ color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
   
   .ItemBlock1.color1{
@@ -1602,6 +1603,9 @@ color: #fff;
   .ReviewComment{
     font-size: 15px;
     line-height: 1.4;
+    height: 230px;
+    overflow: hidden;
+    margin-bottom: 20px;
   }
  
   .slick-active .gtag{
@@ -1778,6 +1782,30 @@ color: #fff;
   background-color: #EDD194;
   }
 
+  .ReviewOwnerB1{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 50px;
+    color: #fff;
+    padding-top: 7px;
+    margin-top: -58px;
+  }
+  .ReviewOwnerB1.color1{
+    background-color: #97C6CA;
+    }
+    .ReviewOwnerB1.color2{
+    background-color: #C4D99F;
+    }
+    .ReviewOwnerB1.color3{
+    background-color: #EDD194;
+    }
+    .rd1{
+      display: block;
+      font-size: 11px;
+      margin-top: 20px;
+    }
 @media screen and (max-height: 700px){
   .HdTxt1 {
     font-size: 27px;
