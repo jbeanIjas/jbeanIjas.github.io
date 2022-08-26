@@ -1133,7 +1133,7 @@ color: #fff;
     color: #8376B2;
 }
 .section2{
-    padding: 25px 0px;
+    padding: 50px 0px;
     background-color: #8376B2;
     margin-top: -2px;
 }
@@ -1212,14 +1212,14 @@ color: #fff;
 }
 .SldrContent{
     position: absolute;
-    bottom: 15px;
-    left: 15px;
+    bottom: 25px;
+    left: 25px;
     z-index: 1;
     cursor: pointer;
 }
 .SliderItem1Txt1{
     color: #fff;
-    font-size: 25px;
+    font-size: 40px;
 }
 .Slider1 .slick-initialized .slick-slide {
     display: flex;
@@ -1290,8 +1290,8 @@ color: #fff;
     max-width: 50%;
 }
 .row .col-3{
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
+    flex: 0 0 50%;
+    max-width: 50%;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -1392,7 +1392,7 @@ color: #fff;
   }
   
   .Slider2 .slick-prev {
-    left: -50px;
+    left: -60px;
   }
   .Slider2 .slick-prev:before, 
   .Slider2 .slick-next:before {
@@ -1531,6 +1531,7 @@ color: #fff;
   .fline svg{
     width: 100%;
     margin-bottom: 20px;
+    margin-left: -65px;
   }
   .ft3{
     font-size: 17px;
@@ -1698,6 +1699,8 @@ color: #fff;
     height: 160px;
   width: 100%;
   margin-right: 10px;
+  position: relative;
+  cursor: pointer;
 }
 .vertical-slider .item.slick-slide.slick-active.slick-center .ItemBlock1{
     height: 200px;
@@ -1710,7 +1713,7 @@ color: #fff;
 .Hero{
   position: relative;
 }
-.Hero::after{
+/* .Hero::after{
   content: "";
   background-image: url(../desktop-images/heroshade.png);
   width: 100%;
@@ -1718,14 +1721,14 @@ color: #fff;
   position: absolute;
   left: 0;
   bottom: 0;
-}
+} */
 .section1 .container{
   z-index: 9;
   position: relative;
 }
 .RdMr1{
   line-height: 1;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: -10px;
 }
 
@@ -1738,4 +1741,53 @@ color: #fff;
 }
 .FeaturesSlider3 .slick-prev{
   left: -50px;
+}
+.BackContent1{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  border-radius: 30px;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: crosshair;
+  transform: translateY(100%);
+  transition: 00.4s;
+  z-index: 1;
+}
+.active .BackContent1{
+  transform: translateY(0%);
+}
+.Slider2 .item {
+  position: relative;
+}
+
+.BackContent1.color1 , .BackContent.color1{
+  background-color: #97C6CA;
+  }
+  .BackContent1.color2 , .BackContent.color2{
+  background-color: #C4D99F;
+  }
+  .BackContent1.color3 , .BackContent.color3{
+  background-color: #EDD194;
+  }
+
+@media screen and (max-height: 700px){
+  .HdTxt1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .Logo {
+      margin-bottom: 15px;
+  }
+  .InptTp1 {
+      padding: 10px;
+      margin-bottom: 8px;
+  }
 }
