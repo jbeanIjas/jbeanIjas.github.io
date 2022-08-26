@@ -1291,8 +1291,8 @@ color: #fff;
     max-width: 50%;
 }
 .row .col-3{
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -1533,7 +1533,6 @@ color: #fff;
   .fline svg{
     width: 100%;
     margin-bottom: 20px;
-    margin-left: -65px;
   }
   .ft3{
     font-size: 17px;
