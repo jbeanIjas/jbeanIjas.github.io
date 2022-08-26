@@ -1651,11 +1651,10 @@ transform: rotate(-90deg);
 }
 .sldr11{
   min-height: 300px;
-  padding: 20px;
+  padding: 25px 20px;
   background-image: url("../desktop-images/slidebg.jpg");
   background-size: cover;
   display: flex;
-  align-items: center;
   justify-content: center;
   border-radius: 45px;
 }
