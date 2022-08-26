@@ -1731,3 +1731,7 @@ transform: rotate(-90deg);
     .ReviewOwnerB1.color3{
     background-color: #EDD194;
     }
+    select option { color: black; }
+    .color-fff{
+      color: #fff;
+    }

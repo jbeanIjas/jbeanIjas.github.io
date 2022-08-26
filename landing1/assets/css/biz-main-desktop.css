@@ -1818,3 +1818,7 @@ color: #fff;
       margin-bottom: 8px;
   }
 }
+select option { color: black; }
+.color-fff{
+  color: #fff;
+}
