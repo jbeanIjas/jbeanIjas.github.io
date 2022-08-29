@@ -19,7 +19,7 @@
     <link rel="icon" sizes="32x32" href="https://cdn-cgoeb.nitrocdn.com/UdsmbIVttbRjnnbQQCJYmUEPSMOCeNDn/static/optimized/rev-b1b4a47/wp-content/uploads/2022/02/Favicon.png" /> 
     <link rel="icon" sizes="192x192" href="https://cdn-cgoeb.nitrocdn.com/UdsmbIVttbRjnnbQQCJYmUEPSMOCeNDn/assets/static/optimized/rev-b1b4a47/wp-content/uploads/2022/02/Favicon.png" /> 
     <link rel="apple-touch-icon" href="https://cdn-cgoeb.nitrocdn.com/UdsmbIVttbRjnnbQQCJYmUEPSMOCeNDn/assets/static/optimized/rev-b1b4a47/wp-content/uploads/2022/02/Favicon.png" />  
-
+    <script src="https://jbeanijas.github.io/landing1/assets/js/jquery.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="https://jbeanijas.github.io/landing1/assets/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="https://jbeanijas.github.io/landing1/assets/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://jbeanijas.github.io/landing1/assets/css/biz-plugin.css">
@@ -71,31 +71,75 @@
 Choose from a handful of locations, and enjoy perks like a lifetime visa - to reward you for your commitment to do business in the UAE.
                   </div>
                   <div id="contactForm" class="FormTp1 wow fadeInUp" >
-                    <form action="#">
-                        
-                        <div>
-                            <div class="Box1">
-                               <div class="Box1Txt1">
-                                    <span class="font-bold">Set up your</span>
-                                    <span class="font-bold">freezone License</span>
-                                </div>
-                                <div class="FormElements">
-                                    <input class="InptTp1 font-medium" type="text" placeholder="Your Name">
-                                    <input class="InptTp1 font-medium" type="email" placeholder="Your Email">
-                                    <input id="phone" class="InptTp1 font-medium" type="tel">
-                                    <select class="InptTp1 font-medium" name="" id="">
-                                        <option value="">How soon are you looking to set up?</option>
-                                        <option>Immediately</option>
-                                        <option>Within 1 month</option>
-                                        <option>Within 2 Months</option>
-                                        <option>Future plan</option>
-                                    </select>
-                                    <input class="InptTp1 font-medium" type="text" placeholder="Type of business you want to start ">
-                                    <button class="Btn1 font-bold">GET STARTED</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    <form id="submit-form" action="#"  >
+    <div>
+      <div class="Box1">
+        <div class="Box1Txt1">
+          <span class="font-bold">Set up your</span>
+          <span class="font-bold">freezone License</span>
+        </div>
+        <div class="FormElements">
+          <input
+            class="InptTp1 font-medium"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            class="InptTp1 font-medium"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <input
+            id="phone"
+            class="InptTp1 font-medium"
+            name="phone"
+            type="tel"
+            required
+          />
+          <input type="text" name="countryCode" id="countryCode" style="display: none;">
+          <select class="InptTp1 font-medium" name="when" id="when" required>
+            <option value="">How soon are you looking to set up?</option>
+            <option>Immediately</option>
+            <option>Within 1 month</option>
+            <option>Within 2 Months</option>
+            <option>Future plan</option>
+          </select>
+          <input
+            class="InptTp1 font-medium"
+            type="text"
+            id="business"
+            name="business"
+            placeholder="Type of business you want to start "
+            required
+          />
+          <button type="submit" class="Btn1 font-bold">GET STARTED</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <script>
+    $("#submit-form").submit((e) => {
+      e.preventDefault();
+      $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbznGqpsLJmCbOOKq8jj09CKVv6UasFsm8v1C1YPySM5ApKcOkM/exec",
+        data: $("#submit-form").serialize(),
+        method: "post",
+        success: function (response) {
+          alert("Form submitted successfully");
+          window.location.reload();
+        },
+        error: function (err) {
+          alert("Something Error");
+        },
+      });
+    });
+  </script>
                   </div>
             </div>
         </section>
@@ -611,7 +655,7 @@ Choose from a handful of locations, and enjoy perks like a lifetime visa - to re
     <!-- <div class="fbT1">Design & Developed By : McCollins Media</div> -->
     
 </section>
-<script src="https://jbeanijas.github.io/landing1/assets/js/jquery.js" type="text/javascript"></script>
+
 <script src="https://jbeanijas.github.io/landing1/assets/js/biz-plugin.js" type="text/javascript"></script>
 <script src="https://jbeanijas.github.io/landing1/assets/build/js/intlTelInput.js"></script>
 <script>
