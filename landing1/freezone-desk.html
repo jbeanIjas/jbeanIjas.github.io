@@ -1,5 +1,16 @@
 <html class="no-js" lang="en" dir="ltr">
 <head>
+    <style>
+        a:not(.btn):hover {
+          text-decoration: none !important;
+      }
+      main{
+        display:none !important;
+      }
+      .footerBottom{
+          font-size: 14px;
+      }
+      </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
@@ -60,86 +71,86 @@
                     </svg>
                   </div>
                   <div class="HdTxt1 font-medium wow fadeInUp">
-                    <span class="HdTxt1-1 wow fadeInUp" >GET YOUR </span>
-                    <span class="HdTxt1-2 font-bold wow fadeInUp" >FREEZONE LICENSE</span>
-                    <span class="HdTxt1-3 wow wow fadeInUp d-block" > WITH FREE VISA FOR LIFE<br/>
-                        STARTING FROM 17,500                        
-                        </span>
+                    <span class="HdTxt1-1 wow fadeInUp" >GET YOUR FREEZONE LICENSE</span>
+                    
+                    <span class="HdTxt1-3 wow wow fadeInUp d-block" > WITH FREE VISA FOR LIFE</span>
+                    <span class="HdTxt1-2 font-bold wow fadeInUp" >STARTING FROM AED 17,500 </span>
                   </div>
+                  
                   <div class="HdTxt2 font-medium wow fadeInUp">
                     Take the hustle-free road on starting a business establishment in one of UAE Free Zones.
 Choose from a handful of locations, and enjoy perks like a lifetime visa - to reward you for your commitment to do business in the UAE.
                   </div>
                   <div id="contactForm" class="FormTp1 wow fadeInUp" >
                     <form id="submit-form" action="#"  >
-    <div>
-      <div class="Box1">
-        <div class="Box1Txt1">
-          <span class="font-bold">Set up your</span>
-          <span class="font-bold">freezone License</span>
-        </div>
-        <div class="FormElements">
-          <input
-            class="InptTp1 font-medium"
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-            required
-          />
-          <input
-            class="InptTp1 font-medium"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your Email"
-            required
-          />
-          <input
-            id="phone"
-            class="InptTp1 font-medium"
-            name="phone"
-            type="tel"
-            required
-          />
-          <input type="text" name="countryCode" id="countryCode" style="display: none;">
-          <select class="InptTp1 font-medium" name="when" id="when" required>
-            <option value="">How soon are you looking to set up?</option>
-            <option>Immediately</option>
-            <option>Within 1 month</option>
-            <option>Within 2 Months</option>
-            <option>Future plan</option>
-          </select>
-          <input
-            class="InptTp1 font-medium"
-            type="text"
-            id="business"
-            name="business"
-            placeholder="Type of business you want to start "
-            required
-          />
-          <button type="submit" class="Btn1 font-bold">GET STARTED</button>
-        </div>
-      </div>
-    </div>
-  </form>
-  <script>
-    $("#submit-form").submit((e) => {
-      e.preventDefault();
-      $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbznGqpsLJmCbOOKq8jj09CKVv6UasFsm8v1C1YPySM5ApKcOkM/exec",
-        data: $("#submit-form").serialize(),
-        method: "post",
-        success: function (response) {
-          alert("Form submitted successfully");
-          window.location.reload();
-        },
-        error: function (err) {
-          alert("Something Error");
-        },
-      });
-    });
-  </script>
+                        <div>
+                        <div class="Box1">
+                            <div class="Box1Txt1">
+                            <span class="font-bold">Set up your</span>
+                            <span class="font-bold">freezone License</span>
+                            </div>
+                            <div class="FormElements">
+                            <input
+                                class="InptTp1 font-medium"
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your Name"
+                                required
+                            />
+                            <input
+                                class="InptTp1 font-medium"
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Your Email"
+                                required
+                            />
+                            <input
+                                id="phone"
+                                class="InptTp1 font-medium"
+                                name="phone"
+                                type="tel"
+                                required
+                            />
+                            <input type="text" name="countryCode" id="countryCode" style="display: none;">
+                            <select class="InptTp1 font-medium" name="when" id="when" required>
+                                <option value="">How soon are you looking to set up?</option>
+                                <option>Immediately</option>
+                                <option>Within 1 month</option>
+                                <option>Within 2 Months</option>
+                                <option>Future plan</option>
+                            </select>
+                            <input
+                                class="InptTp1 font-medium"
+                                type="text"
+                                id="business"
+                                name="business"
+                                placeholder="Type of business you want to start "
+                                required
+                            />
+                            <button type="submit" class="Btn1 font-bold">GET STARTED</button>
+                            </div>
+                        </div>
+                        </div>
+                    </form>
+                    <script>
+                        $("#submit-form").submit((e) => {
+                        e.preventDefault();
+                        $.ajax({
+                            url: "https://script.google.com/macros/s/AKfycbznGqpsLJmCbOOKq8jj09CKVv6UasFsm8v1C1YPySM5ApKcOkM/exec",
+                            data: $("#submit-form").serialize(),
+                            method: "post",
+                            success: function (response) {
+                            alert("Form submitted successfully");
+                            window.location.reload();
+                            },
+                            error: function (err) {
+                            alert("Something Error");
+                            },
+                        });
+                        });
+                    </script>
                   </div>
             </div>
         </section>
@@ -203,7 +214,7 @@ Choose from a handful of locations, and enjoy perks like a lifetime visa - to re
                       <div class="SliderItem Mainland">
                         <div class="SliderItem1" style="background-image: url(https://jbeanijas.github.io/landing1/assets/desktop-images/jur/Maydan.jpg);">
                           <div class="SldrContent">
-                              <div class="SliderItem1Txt1 font-bold color-fff">Meydan<br/>Free Zone</div>
+                              <div class="SliderItem1Txt1 font-bold color-fff">Meydan Freezone</div>
                               <div class="RdMr1">
                                 <img style="display: inline-block;margin-right: 10px;position: relative;top: 10px;" src="https://jbeanijas.github.io/landing1/assets/images/icons8-right-arrow-32.png" alt=""><span style="color:#fff;">Read more</span>
                                 
@@ -223,7 +234,7 @@ Choose from a handful of locations, and enjoy perks like a lifetime visa - to re
                                 
                             </div>
                           </div>
-                          <div class="BackContent font-bold color1">
+                          <div class="BackContent font-bold color2">
                             Sharjah Media City with its robust environment supports media business entities, freelancers and entrepreneurs planning to get started and make their dreams come true.
                           </div>
                         </div>
@@ -237,7 +248,7 @@ Choose from a handful of locations, and enjoy perks like a lifetime visa - to re
                                 
                             </div>
                           </div>
-                          <div class="BackContent font-bold color1">
+                          <div class="BackContent font-bold color3">
                             Leveraging Sharjah’s strategic location and business-friendly environment Sharjah Publishing City Freezone plays a key role in bringing publishing companies and education providers from around the globe to the Emirate.
                           </div>
                         </div>
@@ -423,7 +434,7 @@ Choose from a handful of locations, and enjoy perks like a lifetime visa - to re
                             <div>
                                 <div class="sldr11a font-black">TRUST</div>
                                 <div class="sldr11b font-black"><span class="counter">10</span>+</div>
-                                <div class="sldr11c font-medium"> Awards won</div>
+                                <div class="sldr11d font-bold"> Awards won</div>
                                 <div class="sldr11c font-medium">Did you know: We are also ISO certified</div>
                             </div>
                         </div>
@@ -435,7 +446,7 @@ Choose from a handful of locations, and enjoy perks like a lifetime visa - to re
                               <div>
                                   <div class="sldr11a font-black">EXPERIENCE</div>
                                   <div class="sldr11b font-black"><span class="counter">12</span>+</div>
-                                  <div class="sldr11c font-medium"> Years in business</div>
+                                  <div class="sldr11d font-bold"> Years in business</div>
                                   <div class="sldr11c font-medium">With our experience, knowledge, and network, setting up your business will be easy and enjoyable.</div>
                               </div>
                           </div>
@@ -447,7 +458,7 @@ Choose from a handful of locations, and enjoy perks like a lifetime visa - to re
                               <div>
                                   <div class="sldr11a font-black">DIVERSITY</div>
                                   <div class="sldr11b font-black"><span class="counter">23</span>+</div>
-                                  <div class="sldr11c font-medium">Language spoken</div>
+                                  <div class="sldr11d font-bold">Language spoken</div>
                                   <div class="sldr11c font-medium">We have brought more than 25,000 ideas to life, so far.</div>
                               </div>
                           </div>
@@ -683,6 +694,19 @@ Choose from a handful of locations, and enjoy perks like a lifetime visa - to re
     separateDialCode: true,
     utilsScript: "https://jbeanijas.github.io/landing1/assets/build/js/utils.js",
   });
+  var cc = document.getElementsByClassName("iti__selected-dial-code")[0].innerHTML
+  document.getElementById("countryCode").value = cc
+  console.log(document.getElementById("countryCode").value);
+
+
+  document.getElementsByClassName("iti__country-list")[0].addEventListener("click", function(){
+
+    setTimeout(function() { 
+    var cc = document.getElementsByClassName("iti__selected-dial-code")[0].innerHTML
+    document.getElementById("countryCode").value = cc
+    console.log(document.getElementById("countryCode").value);
+     }, 200);
+  })
 </script>
 
 <script src="https://jbeanijas.github.io/landing1/assets/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
