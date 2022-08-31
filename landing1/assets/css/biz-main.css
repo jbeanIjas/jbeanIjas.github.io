@@ -1397,10 +1397,10 @@ position: relative;
 
 .Slider2 .slick-prev {
   left: 50%;
-  top: -65px;
+  top: -70px;
   bottom: auto;
   transform: rotate(-270deg);
-  margin-left: -25px;
+  margin-left: -30px;
 }
 .Slider2 .slick-prev:before, 
 .Slider2 .slick-next:before {
