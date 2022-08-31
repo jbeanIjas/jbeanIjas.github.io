@@ -1,3 +1,4 @@
+<?php /* Template Name: freezone-mobile */ ?>
 <html class="no-js" lang="en" dir="ltr">
 <head>
   <style type="text/css">
@@ -102,6 +103,7 @@ Choose from a handful of locations, and enjoy perks like a lifetime visa - to re
                             <span class="font-bold">freezone License</span>
                           </div>
                           <div class="FormElements">
+                          <?php echo do_shortcode( '[gravityform id="9" title="false" description="false"]' ); ?>
                             <input
                               class="InptTp1 font-medium"
                               type="text"
@@ -646,46 +648,7 @@ style=" fill:#000000;"><path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 4
 </section>
 
 <script src="https://jbeanijas.github.io/landing1/assets/js/biz-plugin.js" type="text/javascript"></script>
-<script src="https://jbeanijas.github.io/landing1/assets/build/js/intlTelInput.js"></script>
-<script>
-  var input = document.querySelector("#phone");
-  window.intlTelInput(input, {
-    // allowDropdown: false,
-    // autoHideDialCode: false,
-    // autoPlaceholder: "off",
-    // dropdownContainer: document.body,
-    // excludeCountries: ["us"],
-    // formatOnDisplay: false,
-    // geoIpLookup: function(callback) {
-    //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-    //     var countryCode = (resp && resp.country) ? resp.country : "";
-    //     callback(countryCode);
-    //   });
-    // },
-    hiddenInput: "full_number",
-    initialCountry: "ae",
-    // localizedCountries: { 'de': 'Deutschland' },
-    // nationalMode: false,
-    // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
-    // placeholderNumberType: "MOBILE",
-    // preferredCountries: ['cn', 'jp'],
-    separateDialCode: true,
-    utilsScript: "https://jbeanijas.github.io/landing1/assets/build/js/utils.js",
-  });
-  var cc = document.getElementsByClassName("iti__selected-dial-code")[0].innerHTML
-  document.getElementById("countryCode").value = cc
-  console.log(document.getElementById("countryCode").value);
 
-
-  document.getElementsByClassName("iti__country-list")[0].addEventListener("click", function(){
-
-    setTimeout(function() { 
-    var cc = document.getElementsByClassName("iti__selected-dial-code")[0].innerHTML
-    document.getElementById("countryCode").value = cc
-    console.log(document.getElementById("countryCode").value);
-     }, 200);
-  })
-</script>
 
 <script src="https://jbeanijas.github.io/landing1/assets/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
@@ -809,6 +772,25 @@ wow.init();
         <img src="https://jbeanijas.github.io/landing1/assets/images/emailbtn.png" alt="">
     </a>
 </div> -->
+	
+<?php 
+function gf_enqueue_required_files() {
+    GFCommon::log_debug( __METHOD__ . '(): running.' );
+    if ( is_single() && 'post' === get_post_type() ) { // Do it only for Posts.
+        gravity_form_enqueue_scripts( 9, true );
+    }
+}
+add_action( 'get_header', 'gf_enqueue_required_files' );
+
+function gf_add_newsletter_form_after_post( $content ) {
+    GFCommon::log_debug( __METHOD__ . '(): running.' );
+    // Form added after the post content.
+    $content .= gravity_form( 9, true, true, false, false, true, false, false );
+    return $content;
+}
+add_filter( 'the_content', 'gf_add_newsletter_form_after_post' );
+
+?>
 </body>
 
 </html>
