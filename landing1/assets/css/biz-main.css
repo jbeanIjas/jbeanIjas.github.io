@@ -1387,17 +1387,20 @@ position: relative;
 
 }
 .Slider2 .slick-next {
-right: 50%;
-top: -45px;
-transform: rotate(-90deg);
+  right: auto;
+  top: auto;
+  margin-right: -35px;
+  transform: rotate(-90deg);
+  bottom: -60px;
+  left: 50%;
 }
 
 .Slider2 .slick-prev {
-left: 50%;
-top: auto;
-bottom: -60px;
-transform: rotate(-90deg);
-margin-left: -20px;
+  left: 50%;
+  top: -65px;
+  bottom: auto;
+  transform: rotate(-270deg);
+  margin-left: -25px;
 }
 .Slider2 .slick-prev:before, 
 .Slider2 .slick-next:before {
