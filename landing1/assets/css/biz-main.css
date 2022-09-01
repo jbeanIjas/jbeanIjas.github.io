@@ -1125,7 +1125,7 @@ body{
   display: block;
   text-align: center;
 }
-.InptTp1{
+/* .InptTp1{
   display: block;
   background-color: transparent;
   border: 2px solid #fff;
@@ -1135,7 +1135,7 @@ body{
   font-size: 12px;
   padding: 10px;
   margin-bottom: 12px;
-}
+} */
 .FormElements ::placeholder {
   color: #fff;
   opacity: 1;
