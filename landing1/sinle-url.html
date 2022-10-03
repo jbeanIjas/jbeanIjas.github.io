@@ -73,7 +73,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <link rel="stylesheet" type="text/css" href="https://jbeanijas.github.io/landing1/assets/css/biz-main-desktop.css?ver=1.3">
     
-    <link rel="stylesheet" type="text/css" href="https://jbeanijas.github.io/landing1/assets/css/responsive.css?ver=1.19">
+    <link rel="stylesheet" type="text/css" href="https://jbeanijas.github.io/landing1/assets/css/responsive.css?ver=1.26">
 
     <link rel="stylesheet" type="text/css" href="https://www.businessincorporationzone.ae/wp-content/plugins/gravityforms/legacy/css/browsers.min.css?ver=2.5.16">
 
@@ -1046,7 +1046,7 @@ We will, on your behalf: apply, renew, or cancel visa for spouse, dependents and
                   fade: true,
                   asNavFor: '.slider-nav',
                   mobileFirst: true,
-                  speed: 300,
+                  speed: 900,
                   adaptiveHeight: true
             });
             jQuery('.slider-nav').slick({
@@ -1061,7 +1061,7 @@ We will, on your behalf: apply, renew, or cancel visa for spouse, dependents and
                     {
                     breakpoint: 800,
                     settings: {
-                        infinite: false,
+                        infinite: true,
                         slidesToShow: 2,
                         asNavFor: '.newslider',
                         dots: false,
@@ -1079,41 +1079,6 @@ We will, on your behalf: apply, renew, or cancel visa for spouse, dependents and
                 jQuery(this).addClass("active")
             })
 
-            jQuery(".FilterTp1").on('click', function() {
-
-                jQuery(".FilterTp1").removeClass("active");
-
-                jQuery(this).addClass("active");
-
-                var filter = jQuery(this).data('filter');
-
-                jQuery(".FeaturesSlider").slick('slickUnfilter');
-
-
-
-                if (filter == 'Mainland') {
-
-                    jQuery(".FeaturesSlider").slick('slickFilter', '.Mainland');
-
-                } else if (filter == 'Freezone') {
-
-                    jQuery(".FeaturesSlider").slick('slickFilter', '.Freezone');
-
-                } else if (filter == 'Offshore') {
-
-                    jQuery(".FeaturesSlider").slick('slickFilter', '.Offshore');
-
-                } else if (filter == 'all') {
-
-
-
-                    jQuery(".FeaturesSlider").slick('slickUnfilter');
-
-                }
-
-
-
-            })
 
         });
     </script>
