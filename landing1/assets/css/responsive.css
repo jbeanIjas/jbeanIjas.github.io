@@ -527,6 +527,13 @@ margin-bottom: 25px;
     .FullwidthSlider{
 
     }
+    .herobanner img , 
+    .slick-slider img , 
+    .HeroItem12 , 
+    .HeroItem
+    {
+        background-color: #e4e4e4 !important;
+    }
 
     @media screen and (max-width: 800px){
         .section1 {
