@@ -575,5 +575,22 @@ margin-bottom: 25px;
             margin-left: -8px;
             margin-bottom: 30px;
         }
+        .InptTp1 input, .InptTp1 select {
+            padding: 4px 10px !important;
+        }
+        .Box1Txt1 {
+            font-size: 13px !important;
+            margin-bottom: 8px !important;
+        }
+        .elementor-widget-button .elementor-button, .elementor-10954 .elementor-element.elementor-element-b3d7c7c .eael-gravity-form .gform_footer input[type="submit"], .gform_button.button, #promotions .ultimate_carousel_btn, footer .mc4wp-form input[type="submit"] {
+            padding: 7px 15px !important;
+        }
+        .HeroItem12 img{
+            display: none !important;
+        }
+        .HeroItem12{
+            height: 100% !important;
+            min-height: 700px !important;
+        }
     }
    
