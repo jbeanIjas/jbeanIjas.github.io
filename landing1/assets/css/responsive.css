@@ -586,5 +586,8 @@ margin-bottom: 25px;
             height: 100% !important;
             min-height: 700px !important;
         }
+        .slick-center .sldr11 {
+            height: 360px;
+        }
     }
    
