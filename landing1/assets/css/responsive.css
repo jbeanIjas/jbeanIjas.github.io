@@ -529,9 +529,6 @@ margin-bottom: 25px;
     }
 
     @media screen and (max-width: 800px){
-        .newslider img{
-            display: none;
-        }
         .section1 {
             padding: 20px;
         }
@@ -584,9 +581,6 @@ margin-bottom: 25px;
         }
         .elementor-widget-button .elementor-button, .elementor-10954 .elementor-element.elementor-element-b3d7c7c .eael-gravity-form .gform_footer input[type="submit"], .gform_button.button, #promotions .ultimate_carousel_btn, footer .mc4wp-form input[type="submit"] {
             padding: 7px 15px !important;
-        }
-        .HeroItem12 img{
-            display: none !important;
         }
         .HeroItem12{
             height: 100% !important;
