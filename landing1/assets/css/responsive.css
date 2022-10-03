@@ -541,5 +541,39 @@ margin-bottom: 25px;
         .HdTxt2 {
             max-width: 205px;
         }
+        .FullwidthSlider {
+            margin-top: -75px;
+        }
+        .HCnt1t1 {
+            font-size: 17px;
+        }
+        .HCnt1 a {
+            font-size: 13px;
+        }
+        .S7T1 {
+            font-size: 32px;
+            line-height: 1.2;
+        }
+        .section7 {
+            padding: 20px 35px 20px 35px;
+        }
+        .btnSpace {
+            margin: 25px 0px 25px 0px;
+        }
+        .section9 {
+            background-color: #F4F4F4;
+            padding: 15px 35px 15px 35px;
+        }
+        footer .row .col-3 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        footer .row {
+            flex-direction: column;
+        }
+        .footerLogo{
+            margin-left: -8px;
+            margin-bottom: 30px;
+        }
     }
    
