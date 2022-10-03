@@ -534,6 +534,9 @@ margin-bottom: 25px;
     {
         background-color: #e4e4e4 !important;
     }
+    .S7T1 {
+        line-height: 1.2;
+    }
 
     @media screen and (max-width: 800px){
         .section1 {
