@@ -546,8 +546,9 @@ margin-bottom: 25px;
             margin-bottom: 10px;
         }
         .HdTxt1 {
-            font-size: 21px;
-            max-width: 70%;
+            font-size: 19px;
+    max-width: 70%;
+    margin-bottom: 10px;
         }
         .HdTxt2 {
             max-width: 205px;
@@ -615,6 +616,9 @@ margin-bottom: 25px;
         }
         #logo{
             margin-bottom: 10px;
+        }
+        html body .Preloader{
+            left: -100% !important;
         }
     }
    
