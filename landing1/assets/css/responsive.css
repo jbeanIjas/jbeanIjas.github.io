@@ -542,11 +542,16 @@ margin-bottom: 25px;
         .section1 {
             padding: 20px;
         }
+        .Logo {
+            margin-bottom: 10px;
+        }
         .HdTxt1 {
-            font-size: 26px;
+            font-size: 21px;
+            max-width: 70%;
         }
         .HdTxt2 {
             max-width: 205px;
+            font-size: 12px;
         }
         .FullwidthSlider {
             margin-top: -75px;
@@ -598,6 +603,18 @@ margin-bottom: 25px;
         }
         .slick-center .sldr11 {
             height: 360px;
+        }
+        body .elementor-widget-button .elementor-button, 
+        body .elementor-10954 .elementor-element.elementor-element-b3d7c7c .eael-gravity-form .gform_footer input[type="submit"], 
+        body .gform_button.button, #promotions .ultimate_carousel_btn, 
+        body footer .mc4wp-form input[type="submit"] {
+            padding: 7px 15px !important;
+        }
+        #logo svg{
+            max-width: 175px;
+        }
+        #logo{
+            margin-bottom: 10px;
         }
     }
    
