@@ -70,15 +70,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             display: inline-block;
             position: relative;
             animation: loading 2s infinite;
-            transition: 0.4s;
+            transition: 0.8s;
         }
 
         @keyframes loading {
-            0% { opacity: 1; }
-            20% { opacity: 45%; }
-            80% { opacity: 75%; }
-            90% { opacity: 85%; }
-            100% { opacity: 100%; }
+            0% { opacity: 1; top: -10px;}
+            20% { opacity: 0.8; top: 10px;}
+            80% { opacity: 0.6; top: -10px;}
+            90% { opacity: 0.4; top: 10px;}
+            100% { opacity: 0.2; top: -10px;}
         }
     </style>
 
@@ -92,7 +92,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <link rel="stylesheet" type="text/css" href="https://jbeanijas.github.io/landing1/assets/css/biz-main-desktop.css?ver=1.3">
     
-    <link rel="stylesheet" type="text/css" href="https://jbeanijas.github.io/landing1/assets/css/responsive.css?ver=1.28">
+    <link rel="stylesheet" type="text/css" href="https://jbeanijas.github.io/landing1/assets/css/responsive.css?ver=1.33">
 
     <link rel="stylesheet" type="text/css" href="https://www.businessincorporationzone.ae/wp-content/plugins/gravityforms/legacy/css/browsers.min.css?ver=2.5.16">
 
@@ -1169,10 +1169,8 @@ We will, on your behalf: apply, renew, or cancel visa for spouse, dependents and
         wow.init();
         jQuery(document).ready(function($) {
             $("#input_11_2").val("");
-            setTimeout(function () {
-                $(".Preloader").addClass("hidden");
-                $("html, body").animate({ scrollTop: 0 }, "slow");
-            }, 1500);
+            $(".Preloader").addClass("hidden");
+            $("html, body").animate({ scrollTop: 0 }, "slow");
            
         });
     </script>

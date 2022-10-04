@@ -546,8 +546,8 @@ margin-bottom: 25px;
             margin-bottom: 10px;
         }
         .HdTxt1 {
-            font-size: 19px;
-    max-width: 70%;
+            font-size: 15px;
+    max-width: 80%;
     margin-bottom: 10px;
         }
         .HdTxt2 {
@@ -598,10 +598,7 @@ margin-bottom: 25px;
         .elementor-widget-button .elementor-button, .elementor-10954 .elementor-element.elementor-element-b3d7c7c .eael-gravity-form .gform_footer input[type="submit"], .gform_button.button, #promotions .ultimate_carousel_btn, footer .mc4wp-form input[type="submit"] {
             padding: 7px 15px !important;
         }
-        .HeroItem12{
-            height: 100% !important;
-            min-height: 700px !important;
-        }
+        
         .slick-center .sldr11 {
             height: 360px;
         }
@@ -619,6 +616,13 @@ margin-bottom: 25px;
         }
         html body .Preloader{
             left: -100% !important;
+        }
+        .navBtnTxt1{
+            font-size:25px;
+            margin-bottom: 10px;
+        }
+        .S7T1{
+            font-size: 26px;
         }
     }
    
