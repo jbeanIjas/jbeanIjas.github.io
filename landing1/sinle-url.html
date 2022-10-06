@@ -80,6 +80,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             90% { opacity: 0.4; top: 10px;}
             100% { opacity: 0.2; top: -10px;}
         }
+        .DesktopOnly{
+            display: block;
+        }
+        .MobileOnly{
+            display: none;
+        }
+        @media screen and (max-width: 800px){
+            .DesktopOnly{
+                display: none;
+            }
+            .MobileOnly{
+                display: block;
+            }  
+        }
     </style>
 
     <script src="https://jbeanijas.github.io/landing1/assets/js/jquery.js" type="text/javascript"></script>
@@ -126,12 +140,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="Hero panel" id="a1">
 
-            <div class="herobanner">
-
-                
-
-
-
+            <div class="heroSingle">
+                <img class="singleitem1 MobileOnly" src="https://jbeanijas.github.io/landing1/assets/desktop-images/main/klc1.jpg" style="width: 100%;"/>
+                <img class="singleitem1 DesktopOnly" src="https://jbeanijas.github.io/landing1/assets/desktop-images/main/klcd1.jpg" style="width: 100%;"/>
             </div>
 
             <section class="section1 section1-1">
@@ -915,20 +926,12 @@ We will, on your behalf: apply, renew, or cancel visa for spouse, dependents and
             });
 
 
-            let herrobannerdesktop = [
-                '<div class="HeroItem"><img src="https://jbeanijas.github.io/landing1/assets/desktop-images/main/Biz-Web Banner-2a.jpg" alt=""></div>',
-                '<div class="HeroItem"><img src="https://jbeanijas.github.io/landing1/assets/desktop-images/main/Biz-Web Banner-2b.jpg" alt=""></div>',
-                '<div class="HeroItem"><img src="https://jbeanijas.github.io/landing1/assets/desktop-images/main/Biz-Web Banner-2c.jpg" alt=""></div>',
-                '<div class="HeroItem"><img src="https://jbeanijas.github.io/landing1/assets/desktop-images/main/Biz-Web Banner-2d.jpg" alt=""></div>'
-                ]
-                let herrobannermobile = [
-                '<div class="HeroItem"><img src="https://jbeanijas.github.io/landing1/assets/desktop-images/main/Biz-Web Banner-1a.jpg" alt=""></div>',
-                '<div class="HeroItem"><img src="https://jbeanijas.github.io/landing1/assets/desktop-images/main/Biz-Web Banner-1b.jpg" alt=""></div>',
-                '<div class="HeroItem"><img src="https://jbeanijas.github.io/landing1/assets/desktop-images/main/Biz-Web Banner-1c.jpg" alt=""></div>',
-                '<div class="HeroItem"><img src="https://jbeanijas.github.io/landing1/assets/desktop-images/main/Biz-Web Banner-1d.jpg" alt=""></div>',
-                ]
+           
+
+                
                 
                 if(jQuery( window ).width() < 600){
+                    $(".singleitem").attr('src',"https://jbeanijas.github.io/landing1/assets/desktop-images/main/klc1.jpg");
                     $(".mob1").attr('src',"https://jbeanijas.github.io/landing1/assets/desktop-images/m1.jpg");
                     $(".mob2").attr('src',"https://jbeanijas.github.io/landing1/assets/desktop-images/m2.jpg");
                     $(".mob3").attr('src',"https://jbeanijas.github.io/landing1/assets/desktop-images/m3.jpg");
@@ -936,19 +939,16 @@ We will, on your behalf: apply, renew, or cancel visa for spouse, dependents and
                     $(".mob5").attr('src',"https://jbeanijas.github.io/landing1/assets/desktop-images/m5.jpg");
                     $(".mob6").attr('src',"https://jbeanijas.github.io/landing1/assets/desktop-images/m6.jpg");
                     
-                    for (let i = 0; i < 6; i++) {
-                        jQuery('.herobanner').append(herrobannermobile[i])
-                    }
+                    
                 }else{
+                    $(".singleitem").attr('src',"https://jbeanijas.github.io/landing1/assets/desktop-images/main/klcd1.jpg");
                     $(".mob1").attr('src',"https://jbeanijas.github.io/landing1/assets/desktop-images/w1.jpg");
                     $(".mob2").attr('src',"https://jbeanijas.github.io/landing1/assets/desktop-images/w2.jpg");
                     $(".mob3").attr('src',"https://jbeanijas.github.io/landing1/assets/desktop-images/w3.jpg");
                     $(".mob4").attr('src',"https://jbeanijas.github.io/landing1/assets/desktop-images/w4.jpg");
                     $(".mob5").attr('src',"https://jbeanijas.github.io/landing1/assets/desktop-images/w5.jpg");
                     $(".mob6").attr('src',"https://jbeanijas.github.io/landing1/assets/desktop-images/w6.jpg");
-                    for (let j = 0; j < 6; j++) {
-                        jQuery('.herobanner').append(herrobannerdesktop[j])
-                    }
+                    
                 }
 
                 let userVideoydesktop = '<object class=" wow fadeInUp" type="image/svg+xml" data="https://jbeanijas.github.io/landing1/assets/animations/desktop-emp.svg"></object>';
@@ -1170,7 +1170,6 @@ We will, on your behalf: apply, renew, or cancel visa for spouse, dependents and
         jQuery(document).ready(function($) {
             $("#input_11_2").val("");
             $(".Preloader").addClass("hidden");
-            $("html, body").animate({ scrollTop: 0 }, "slow");
            
         });
     </script>
